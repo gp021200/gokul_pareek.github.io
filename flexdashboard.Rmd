@@ -1,0 +1,81 @@
+---
+title: "Problem 2"
+output:
+  flexdashboard::flex_dashboard:
+    orientation: columns
+    vertical_layout: fill
+
+---
+
+```{r}
+library(flexdashboard)
+library(tidyverse)
+library(p8105.datasets)
+library(plotly)
+```
+
+### Creating a flexdashboard
+
+##### Plot 1 (Box Plot)
+
+```{r}
+
+data("rest_inspec")
+set.seed(123)
+
+# Randomly sampling 500 rows from the dataset
+df_rest_inspec <- rest_inspec %>%
+  select(boro, inspection_date, score) %>%
+  mutate(boro = str_to_title(boro)) %>%
+  drop_na() %>%
+  sample_n(500)
+
+box_plot <- plot_ly(df_rest_inspec, 
+                    y = ~score, 
+                    color = ~boro, 
+                    type = "box") %>%
+  layout(title = "Box Plot of Inspection Scores by Borough",
+         yaxis = list(title = "Inspection Score"),
+         xaxis = list(title = "Borough"))
+
+box_plot
+```
+
+##### Plot 2 (Bar Plot)
+
+```{r}
+
+avg_scores <- df_rest_inspec %>%
+  group_by(boro) %>%
+  summarise(avg_score = mean(score, na.rm = TRUE)) 
+
+bar_plot <- plot_ly(avg_scores, 
+                    x = ~boro, 
+                    y = ~avg_score, 
+                    type = "bar", 
+                    name = "Average Score") %>%
+  layout(title = "Average Inspection Scores by Borough",
+         xaxis = list(title = "Borough"),
+         yaxis = list(title = "Average Score"))
+
+bar_plot
+    
+```
+
+##### Plot 3 (Scatter Plot)
+
+```{r}
+
+scatter_plot <- df_rest_inspec %>%
+  plot_ly(x = ~inspection_date, 
+          y = ~score, 
+          type = "scatter", 
+          mode = "markers") %>%
+  layout(title = "Scatter Plot of Inspection Scores Over Time",
+         xaxis = list(title = "Inspection Date"),
+         yaxis = list(title = "Inspection Score"))
+
+scatter_plot  
+```
+
+

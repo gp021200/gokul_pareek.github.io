@@ -17,4 +17,4 @@ Hello and Welcome to my Website!
 * [Github](https://github.com/gp021200/gokul_pareek.github.io)
 * [LinkedIn](https://www.linkedin.com/in/gokul-pareek)
 * [Email](mailto:gp2770@cumc.columbia.edu)
-
+* [Plots for New York Restaurant Inspection](flexdashboard.html)
