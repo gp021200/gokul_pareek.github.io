@@ -1,0 +1,42 @@
+---
+title: "About Me"
+output: 
+  html_document:
+    toc: true
+    toc_float: true
+    theme: cerulean
+---
+
+My name is Gokul Pareek and I am from New Delhi, India. I went to college at the University of Illinois Chicago where I did a double bachelor's degree in Biological Sciences and Mathematics and Computer Science. I am currently pursuing an M.S. in Biostatistics from the Mailman School of Public Health, Columbia University. Take a look at my website to learn more about my background, projects, and professional journey!
+
+## Education
+
+* University of Illinois Chicago – Chicago, IL
+Aug’ 2019 - Dec’ 2022 ; Bachelor of Science in Biological Sciences, Bachelor of Science in Mathematics and Computer Science (MCS) 
+
+* Columbia University, Mailman School of Public Health - New York City, NY			       
+Sept’ 2024 - Present ; Master of Science in Biostatistics
+
+## Professional Experiences
+
+* Medical College of Wisconsin		
+Role: Research Assistant							       
+Dates: Jun’ 2022 – Aug’ 2024
+
+* MedEx Ambulance Service Inc.  
+Role: Emergency Medical Technician							       
+Dates: Mar' 2023 - Nov' 2023 
+
+## Licenses and Certifications
+
+* Emergency Medical Technician - Illinois Department of Public Health (IDPH)					 
+* NREMT - National Registry of Emergency Medical Technicians					
+* Basic Life Support (CPR and AED) - American Heart Association							
+* COVID-19 Contact Tracing - The Johns Hopkins University – Coursera 						
+
+## Skills
+
+* Software & Data Analysis: Proficient in R, Python, and SAS for statistical analysis    and data manipulation.
+* Data Visualization: Skilled in Tableau, R (ggplot2), and Excel for creating clear,     insightful data visualizations.
+
+
